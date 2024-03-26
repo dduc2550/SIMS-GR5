@@ -1,0 +1,67 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - School</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/School.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site-contact.css" asp-append-version="true" />
+    <script src="https://kit.fontawesome.com/09a5fdf6ba.js"
+            crossorigin="anonymous"></script>
+</head>
+<did id="banner">
+    <img src="~/img/london.jpg" />
+</did>
+<div id="introduction">
+    <img src="~/img/historybtec.webp" />
+    <img src="~/img/historyfptedu.jpg" />
+    <img src="~/img/ranking.jpg" />
+    <img src="~/img/int.jpg" />
+</div>
+
+<body>
+<div class="container">
+    <div style="text-align:center">
+        <div class="heading">
+        <a>Contact Us</a>
+        </div>
+        <div class="tell"><a>Ask consulting questions</a></div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.8630462387955!2d105.74389507537674!3d21.038165180613483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134550dfe77114b%3A0x799dca0203fc6c74!2sBTEC%20FPT!5e0!3m2!1sen!2s!4v1711449835124!5m2!1sen!2s" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            </div>
+        </div>
+        <div class="column">
+            <form action="/action_page.php" onsubmit="return handleSubmit()">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname"
+                       placeholder="Your name..">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname"
+                       placeholder="Your last name..">
+                <label for="area">Area</label>
+                <select id="area" name="area">
+                    <option >VietNam</option>
+                    <option >Canada</option>
+                    <option >USA</option>
+                </select>
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject"
+                          placeholder="Write something.." style="height:170px"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

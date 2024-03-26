@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - School</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/School.styles.css" asp-append-version="true" />
+    <script src="https://kit.fontawesome.com/09a5fdf6ba.js"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="header">
+            <div class="logo">
+                <a>BTEC FPT</a>
+            </div>
+            <div id="menu">
+                <div class="item">
+                    <a asp-controller="Course" asp-action="Index">Course</a>
+                </div>
+                <div class="item">
+                    <a href="">Weekly timetable</a>
+                </div>
+                <div class="item">
+                    <a href="">Notification</a>
+                </div>
+            </div>
+            <div id="actions">
+                <div class="item">
+                    <div class="item" id="user">
+                        <p style="font-size: 30px">
+                            <i class="fa-solid fa-user" style="color:#ffa500"></i>
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+    <footer class="section-p1">
+        <div class="col">
+            <div class="logo">
+                <a>BTEC FPT</a>
+            </div>
+            <h3>Contact</h3>
+            <p><strong>Address: </strong>Building D, 13 Trinh Van Bo, Xuan Phuong, Nam Tu Liem, Hanoi, Vietnam</p>
+            <p><strong>Phone:</strong> +01 2222 365 / (+91) 81 2345 6789</p>
+            <p><strong>Hours:</strong> 6:15 - 21:00, Mon - Sun</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">BTEC FPT HA NOI</a>
+            <a href="#">BTEC FPT DA NANG</a>
+            <a href="#">BTEC FPT HO CHI MINH</a>
+            <a href="#">BTEC FPT CAN THO</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">View account</a>
+            <a href="#">View couses</a>
+            <a href="#">View weekly timetable</a>
+            <a href="#">View Notification</a>
+            <a href="#">Help?</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="~/img/googleplay.jpg" class ="app-icon" />
+                <img src="~/img/appstore.jpg" class="app-icon" />
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>0 2023, Btec-fpt Polytecnic</p>
+        </div>
+        </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
