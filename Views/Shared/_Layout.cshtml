@@ -14,27 +14,31 @@
     <header>
         <div id="header">
             <div class="logo">
-                <a>BTEC FPT</a>
+                <a asp-controller ="Home" asp-action="Index">BTEC FPT</a>
             </div>
             <div id="menu">
                 <div class="item">
                     <a asp-controller="Course" asp-action="Index">Course</a>
                 </div>
                 <div class="item">
-                    <a href="">Weekly timetable</a>
+                    <a asp-controller="Registercourse" asp-action="Index">Register Course</a>
                 </div>
-                <div class="item">
-                    <a href="">Notification</a>
-                </div>
+
             </div>
-            <div id="actions">
+           <div id="actions">
                 <div class="item">
+                    <a asp-controller="Login" asp-action="Index">Login</a>
+                </div>
+                <div class="item">
+                    <a asp-controller="Register" asp-action="Index">Register</a>
+                </div>
+                @*<div class="item">
                     <div class="item" id="user">
                         <p style="font-size: 30px">
                             <i class="fa-solid fa-user" style="color:#ffa500"></i>
                             </p>
                     </div>
-                </div>
+                </div>*@
             </div>
         </div>
     </header>

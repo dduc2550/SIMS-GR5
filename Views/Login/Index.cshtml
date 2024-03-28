@@ -1,0 +1,95 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - School</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/assets/css/bootstrap-datetimepicker.min.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/assets/css/ckeditor.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/assets/css/feather.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/assets/css/style.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/School.styles.css" asp-append-version="true" />
+    <script src="https://kit.fontawesome.com/09a5fdf6ba.js"
+            crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="main-wrapper login-body">
+        <div class="login-wrapper">
+            <div class="container">
+                <div class="loginbox">
+                    <div class="login-left">
+                        <img class="img-fluid" src="~/img/img/login.png"
+                             alt="Logo">
+                    </div>
+                    <div class="login-right">
+                        <div class="login-right-wrap">
+                            <h1>Welcome to BTEC-FPT</h1>
+                            <p class="account-subtitle">Need an account? <a a asp-controller="Register" asp-action="Index">Sign Up</a></p>
+                            <h2>Sign in</h2>
+
+                            <form action="index.html">
+                                <div class="form-group">
+                                    <label>Username <span class="login-danger">*</span></label>
+                                    <input class="form-control" type="text">
+                                    <span class="profile-views"><i class="fas fa-user-circle"></i></span>
+                                </div>
+                                <div class="form-group">
+                                    <label>Password <span class="login-danger">*</span></label>
+                                    <input class="form-control pass-input" type="text">
+                                    <span class="profile-views feather-eye toggle-password"></span>
+                                </div>
+                                <div class="forgotpass">
+                                    <div class="remember-me">
+                                        <label class="custom_check mr-2 mb-0 d-inline-flex remember-me">
+                                            Remember me
+                                            <input type="checkbox" name="radio">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <a href="/Login/Forgot">Forgot Password?</a>
+                                </div>
+                                <div class="form-group">
+                                    <button asp-controller="Admin" asp-action="Index" class="btn btn-primary btn-block" type="submit">Login</button>
+                                </div>
+                            </form>
+
+                            <div class="login-or">
+                                <span class="or-line"></span>
+                                <span class="span-or">or</span>
+                            </div>
+
+                            <div class="social-login">
+                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script  href="~/css/assets/js/jquery-3.6.0.min.js"></script>
+
+    <script  href="~/css/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script  href="~/css/assets/js/feather.min.js"></script>
+
+    <script  href="~/css/assets/js/script.js"></script>
+</body>
+</html>
+
